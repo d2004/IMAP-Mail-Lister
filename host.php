@@ -1,5 +1,5 @@
 <?php
-if (!$_SESSION['logged_in_a442'] and !$_SESSION['usera3'] and !$_SESSION['passa3']) {
+if (!$_SESSION['logged_in_a442'] and !$_SESSION['usera3'] and !$_SESSION['passa3'] and !$_SESSION['imapserver']) {
   header('location: imap/login.php'); // redirect if no logged in
 }
 function getMail() {
