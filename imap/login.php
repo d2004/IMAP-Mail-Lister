@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_POST['issed_login']) {
   $_SESSION['logged_in_a442'] = true;
   $_SESSION['usera3'] = $_POST['email'];
