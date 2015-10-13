@@ -1,9 +1,9 @@
 <?php
 if (!$_SESSION['logged_in_a442'] and !$_SESSION['usera3'] and !$_SESSION['passa3'] and !$_SESSION['imapserver']) {
-  header('location: imap/login.php'); // redirect if no logged in
+  header('location: IMAP-Mail-Lister-master/imap/login.php'); // redirect if no logged in
 }
 function getMail() {
-  include('imap/connection.php'); // include the connection file
+  include('IMAP-Mail-Lister-master/imap/connection.php'); // include the connection file
   $count = imap_num_msg($connection); // calculate messages number
   for($i = 1; $i <= $count; $i++) { // STRING 1
     $header = imap_headerinfo($connection, $i); // load headers informations
